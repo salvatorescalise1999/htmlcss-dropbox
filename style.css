@@ -1,13 +1,38 @@
+/* RESET CSS */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* REGOLE GENERALI */
 body {
     font-family: "Open Sans", sans-serif;
 }
 
+hr {
+    border-bottom: solid 1px lightgray;
+
+}
+
+.padding-botton {
+    padding-bottom: 20px;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+
+.color-gray {
+    color: gray;
+}
+
+.fa-check {
+    color: #0161fd;
+}
+
+/* CLASSI */
 
 .header-flex {
     display: flex;
@@ -32,14 +57,14 @@ body {
 
 }
 
-li {
+.flex-row li {
     flex-direction: row;
     list-style: none;
     padding: 15px;
     cursor: pointer;
 }
 
-li:hover {
+.flex-row li:hover {
     border-bottom: solid 2px #0161fd;
 }
 
@@ -60,19 +85,24 @@ li:hover {
     border: #0161fd;
     cursor: pointer;
 }
-.font-size-button{
+
+.font-size-button {
     font-size: 1.1rem;
 }
-.hello-section{
+
+/* HELLO SECTION */
+.hello-section {
     background-color: #b4d0e6;
     height: 720px;
     width: 100%;
-   
+    padding-bottom: 100px;
+
 }
-.title{
+
+.title {
     font-size: 2.4rem;
     width: 60%;
-     padding-top: 150px;
+    padding-top: 150px;
     margin: 0 auto;
 }
 
@@ -81,33 +111,114 @@ li:hover {
     padding-top: 50px;
     margin: 0 auto;
     display: flex;
+    padding-bottom: 100px;
 }
 
-
-
-.left-container{
+.left-container {
     flex-direction: column;
     width: 36%;
 }
 
-.right-container{
+.right-container {
     width: 64%;
 }
 
-.right-container img{   
+.right-container img {
     max-height: 100%;
     max-width: 100%;
 }
 
-.padding-botton{
-    padding-bottom: 20px;
-}
-
-.padding-top{
-    padding-top: 20px;
-}
-
-.arrow{
+.arrow {
     font-size: 2rem;
     padding-top: 40px;
+}
+
+/* PIANO BUSINESS */
+
+.piano-business {
+    display: flex;
+    width: 100%;
+    height: 1500px;
+    padding-top: 250px;
+}
+
+.flex-piano-business {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.business-title {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.check-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 5px;
+    width: 100%;
+
+}
+
+.check-blue {
+    padding: 5px;
+    border: 5px solid #0161fd;
+    border-radius: 19px;
+    background-color: white;
+}
+
+.check-white {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 19px;
+    background-color: white;
+}
+
+.check-blue p {
+    padding-right: 20px;
+}
+
+.piani-mensili {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    gap: 20px;
+    height: -webkit-fill-available;
+
+}
+
+.col-calc {
+    height: 100%;
+    width: calc(100% / 3 - (40px / 3));
+    border: 1px solid black;
+    display: flex;
+}
+
+
+.title-piani-mensili>p {
+    text-align: center;
+    padding: 5px;
+}
+
+.hr-small {
+    width: 30%;
+    margin-right: auto;
+
+}
+
+.content-piani-mensili {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.content-piani-mensili ul li {
+    padding-bottom: 30px;
+    list-style: none;
 }
