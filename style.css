@@ -12,8 +12,8 @@ body {
 .header-flex {
     display: flex;
     justify-content: space-between;
-
-    height: 50px;
+    background-color: white;
+    height: 80px;
     padding-left: 10px;
     padding-right: 10px;
     position: fixed;
@@ -40,7 +40,7 @@ li {
 }
 
 li:hover {
-    border-bottom: solid 1px #0161fd;
+    border-bottom: solid 2px #0161fd;
 }
 
 .button-blue:hover {
@@ -59,4 +59,55 @@ li:hover {
     color: white;
     border: #0161fd;
     cursor: pointer;
+}
+.font-size-button{
+    font-size: 1.1rem;
+}
+.hello-section{
+    background-color: #b4d0e6;
+    height: 720px;
+    width: 100%;
+   
+}
+.title{
+    font-size: 2.4rem;
+    width: 60%;
+     padding-top: 150px;
+    margin: 0 auto;
+}
+
+.hello-section-container {
+    width: 60%;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+.left-container{
+    flex-direction: column;
+    width: 36%;
+}
+
+.right-container{
+    width: 64%;
+}
+
+.right-container img{   
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.padding-botton{
+    padding-bottom: 20px;
+}
+
+.padding-top{
+    padding-top: 20px;
+}
+
+.arrow{
+    font-size: 2rem;
+    padding-top: 40px;
 }
